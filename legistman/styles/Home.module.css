@@ -1,0 +1,75 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo { font-family: var(--font-display); font-size: 20px; letter-spacing: 1px; color: var(--text); }
+.logo span { color: var(--gold); }
+.navLinks { display: flex; gap: 10px; }
+
+.main { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+.hero { text-align: center; padding: 64px 20px 40px; }
+.badge {
+  display: inline-block;
+  background: var(--gold-light);
+  color: var(--gold-dark);
+  font-size: 13px;
+  padding: 5px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+.title em { color: var(--gold); font-style: italic; }
+.subtitle { font-size: 16px; color: var(--text-muted); margin-bottom: 28px; line-height: 1.7; }
+.heroBtns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.statsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: var(--bg2);
+  border-radius: 14px;
+  padding: 20px 32px;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+.stat { text-align: center; padding: 8px 28px; }
+.stat span { display: block; font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--gold); }
+.stat { font-size: 13px; color: var(--text-muted); }
+.statDivider { width: 1px; height: 40px; background: var(--border); }
+
+.section { padding: 32px 0 40px; }
+.sectionTitle { font-family: var(--font-display); font-size: 26px; font-weight: 500; margin-bottom: 6px; }
+.sectionSub { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+
+.coursesGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.courseCard { background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.courseThumb { height: 90px; background: var(--gold-light); display: flex; align-items: center; justify-content: center; font-size: 36px; }
+.courseBody { padding: 12px 14px; }
+.courseTag { font-size: 11px; background: var(--gold-light); color: var(--gold-dark); padding: 2px 10px; border-radius: 10px; display: inline-block; margin-bottom: 7px; }
+.courseBody h3 { font-size: 14px; font-weight: 500; margin-bottom: 5px; line-height: 1.4; }
+.courseMeta { font-size: 12px; color: var(--text-muted); }
+.courseLock { font-size: 12px; color: var(--gold); margin-top: 6px; }
+
+.howSection { background: var(--bg2); border-radius: 16px; padding: 32px; margin-bottom: 48px; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 20px; }
+.step { display: flex; flex-direction: column; gap: 8px; }
+.stepNum { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--gold); }
+.stepText { font-size: 14px; color: var(--text); line-height: 1.5; }
+
+.footer { border-top: 1px solid var(--border); padding: 24px 40px; display: flex; align-items: center; justify-content: space-between; }
