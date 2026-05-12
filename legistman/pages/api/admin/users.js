@@ -2,12 +2,14 @@ import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  process.env.SUPABASE_SERVICE_KEY
 )
+
+const ADMIN_ID = '7869342062'
 
 export default async function handler(req, res) {
   const { adminKey } = req.query
-  if (adminKey !== process.env.TELEGRAM_ADMIN_ID) {
+  if (adminKey !== ADMIN_ID) {
     return res.status(403).json({ error: 'Ruxsat yoq' })
   }
   const { data, error } = await supabase
